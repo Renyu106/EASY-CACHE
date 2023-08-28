@@ -1,4 +1,3 @@
-User
 <?php
 
 class CACHE
