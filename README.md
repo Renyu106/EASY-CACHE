@@ -51,3 +51,9 @@ The class will return an associative array containing the status of the operatio
 ### Contributions
 
 Feel free to contribute to this project by submitting pull requests or issues.
+
+### License
+
+This project is open-source and licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
