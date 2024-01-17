@@ -33,7 +33,7 @@ class CACHE
 
         $FILE_NAME = CACHE_LOCATION . "/" . $DATA_KEY;
 
-        if ($CACHE_FILE = file_get_contents($FILE_NAME)) {
+        if (file_exists($FILE_NAME) && $CACHE_FILE = file_get_contents($FILE_NAME)) {
             $OLD_CACHE = json_decode(gzuncompress(base64_decode($CACHE_FILE)), true);
             $CACHE_META['UPDATED_AT'] = $NOW;
             $ARRAY = array_merge($ARRAY, $OLD_CACHE['DATA']);
